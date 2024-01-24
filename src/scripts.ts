@@ -361,7 +361,6 @@ console.log(divisibleHigherNatural(-5, 7));
 // Beginning at the end of 'a', insert 'b' after every 3rd character of 'a'
 // Return the resulting string
 
-// TODO: Something does not work right
 const twoStringDoingThings = (a: string, b: string): string => {
 
     let result = '';
@@ -748,8 +747,6 @@ console.log(getMinMaxNumbers(2, 7));
 // For example, the array ['Alf', 'Alice', 'Ben'] should be transformed to
 // { a: ['Alf', 'Alice'], b: ['Ben']}
 
-
-// TODO: No idea what I did here
 const getObjectSortedStringNames = (a: string[]): { [key: string]: string[] } => {
     const grouped: { [key: string]: string[] } = {};
 
@@ -907,8 +904,6 @@ console.log(createObjWithValue('b', 'w'));
 // Create an object that has properties with keys 'a' and corresponding values 'b'
 // Return the object
 
-
-// TODO: Got to look more into how I did this
 const createObjOutOfArray = (a: any[], b: any[]): {} => {
 
     const myObj: { [key: string]: any } = {};
@@ -967,7 +962,6 @@ console.log(getAllObjKeysSum({w: 15, x: 22, y: 13}));
 // except for the property with key 'b'
 
 
-// TODO: Not sure how to do this yet
 const getObjWithoutKeyB = (a: { [key: string]: number }): { [key: string]: number } => {
     const result: { [key: string]: number } = {};
 
@@ -1038,7 +1032,6 @@ const swapObjKeysWithValues = (a: { [key: string]: string }): {} => {
     const newObj: { [key: string]: string } = {};
 
     for (const key in a) {
-        // TODO: Why does this reverse both key and value, not just value
         newObj[a[key]] = key;
     }
 
@@ -1152,8 +1145,6 @@ console.log(getObjPersonalInfo({fn: 'Matthew', ln: 'Müller', age: 19, email: 'm
 // It should have a key for each unique value of the array
 // The corresponding object value should be the number of times the key occurs within the array
 
-
-// TODO: Check this out later, brainfuck
 const makeObjOutOfArray = (a: number[]): { [key: number]: number } => {
     const newObj: { [key: number]: number } = {};
 
@@ -1188,7 +1179,6 @@ console.log(areDatesEqual(new Date('2001/01/01 08:00:00'), new Date('2000/01/01 
 // Write a function that takes two date instances as argument
 // It should return the number of days that lies between those dates
 
-// TODO: Is there no easier way to do this?
 const getDaysBetween = (a: Date, b: Date): number => {
     const oneDayInMs: number = 24 * 60 * 60 * 1000;
     const differenceInDays: number = Math.round(Math.abs((a.getTime() - b.getTime() / oneDayInMs)));
